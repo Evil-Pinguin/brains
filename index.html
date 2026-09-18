@@ -81,6 +81,22 @@
       <symbol id="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
         <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/>
       </symbol>
+      <symbol id="i-cluster" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="5" cy="7" r="1.9"/><circle cx="19" cy="7" r="1.9"/><circle cx="7" cy="17" r="1.9"/><circle cx="17" cy="17" r="1.9"/><circle cx="12" cy="11.5" r="2.6"/>
+        <path d="M10 10 6.5 8"/><path d="m14 10 3.5-2"/><path d="M10.3 13.3 8.2 15.5"/><path d="m13.7 13.3 2.1 2.2"/>
+      </symbol>
+      <symbol id="i-tangle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 12a1 1 0 0 1 2 0 3 3 0 0 1-6 0 5 5 0 0 1 10 0 7 7 0 0 1-14 0"/>
+      </symbol>
+      <symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="9"/><path d="M12 7.5V12l3 2"/>
+      </symbol>
+      <symbol id="i-alert" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"/><path d="M12 9v4"/><path d="M12 17h.01"/>
+      </symbol>
+      <symbol id="i-check-x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="3.5" y="3.5" width="17" height="17" rx="4"/><path d="m9.5 9.5 5 5"/><path d="m14.5 9.5-5 5"/>
+      </symbol>
     </defs>
   </svg>
 
@@ -99,7 +115,7 @@
     <div class="counter">
       <span class="counter-cur" id="counterCur">01</span>
       <span class="counter-sep">/</span>
-      <span class="counter-total">04</span>
+      <span class="counter-total" id="counterTotal">08</span>
     </div>
   </header>
 
@@ -290,6 +306,190 @@
       </div>
     </section>
 
+    <!-- 05 · Болезнь Альцгеймера -->
+    <section class="slide">
+      <div class="ghost anim" style="--i:9" aria-hidden="true">05</div>
+      <figure class="visual anim" style="--i:0">
+        <div class="plx">
+          <div class="frame">
+            <img src="assets/brain-05-alzheimer.jpg" alt="МРТ-снимки: здоровый мозг и мозг при болезни Альцгеймера с выраженной атрофией" draggable="false">
+            <span class="chip"><i></i>МРТ · сравнение с нормой</span>
+          </div>
+        </div>
+        <figcaption class="credit">Изображение: Medizzy</figcaption>
+      </figure>
+      <div class="content">
+        <div class="kicker anim" style="--i:1"><span class="kicker-line"></span>05 · Нейродегенерация</div>
+        <h1 class="anim" style="--i:2">Болезнь <em>Альцгеймера</em></h1>
+        <p class="lead anim" style="--i:3">Медленное угасание: мозг буквально сжимается, а память растворяется в тумане.</p>
+        <ul class="feats">
+          <li class="feat anim" style="--i:4">
+            <span class="feat-ic"><svg><use href="#i-trend-down"/></svg></span>
+            <div><b>Атрофия коры</b><span>Височные и теменные зоны истончаются — это видно на МРТ год за годом.</span></div>
+          </li>
+          <li class="feat anim" style="--i:5">
+            <span class="feat-ic"><svg><use href="#i-minimize"/></svg></span>
+            <div><b>Гиппокамп резко уменьшен</b><span>Первый удар — по краткосрочной памяти: события не «записываются».</span></div>
+          </li>
+          <li class="feat anim" style="--i:6">
+            <span class="feat-ic"><svg><use href="#i-cluster"/></svg></span>
+            <div><b>Бета-амилоидные бляшки</b><span>Белковые скопления между нейронами нарушают передачу сигналов.</span></div>
+          </li>
+          <li class="feat anim" style="--i:7">
+            <span class="feat-ic"><svg><use href="#i-tangle"/></svg></span>
+            <div><b>Тау-клубки</b><span>Внутри нейронов рушится «скелет» — транспорт веществ по отросткам замирает.</span></div>
+          </li>
+          <li class="feat anim" style="--i:8">
+            <span class="feat-ic"><svg><use href="#i-droplet-off"/></svg></span>
+            <div><b>Дефицит ацетилхолина</b><span>Нейромедиатор памяти и внимания угасает одним из первых.</span></div>
+          </li>
+        </ul>
+        <div class="stats anim" style="--i:9">
+          <div class="stat"><b>≈55 млн</b><span>людей с деменцией в мире</span></div>
+          <div class="stat"><b>60–70%</b><span>случаев деменции — Альцгеймер</span></div>
+          <div class="stat"><b>65+</b><span>типичный возраст дебюта</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 06 · Тревожное расстройство -->
+    <section class="slide">
+      <div class="ghost anim" style="--i:9" aria-hidden="true">06</div>
+      <figure class="visual anim" style="--i:0">
+        <div class="plx">
+          <div class="frame">
+            <img src="assets/brain-06-anxiety.png" alt="Снимок мозга с гиперактивной миндалиной при тревожном расстройстве" draggable="false">
+            <span class="chip"><i></i>фМРТ · миндалина</span>
+          </div>
+        </div>
+        <figcaption class="credit">Изображение: Liv Hospital</figcaption>
+      </figure>
+      <div class="content">
+        <div class="kicker anim" style="--i:1"><span class="kicker-line"></span>06 · Тревожный спектр</div>
+        <h1 class="anim" style="--i:2">Тревожное <em>расстройство</em></h1>
+        <p class="lead anim" style="--i:3">Система тревоги застревает во включённом состоянии: мозг видит угрозу там, где её нет.</p>
+        <ul class="feats">
+          <li class="feat anim" style="--i:4">
+            <span class="feat-ic"><svg><use href="#i-zap"/></svg></span>
+            <div><b>Гиперреактивная миндалина</b><span>Тревога вспыхивает мгновенно — ещё до того, как мысль оформилась.</span></div>
+          </li>
+          <li class="feat anim" style="--i:5">
+            <span class="feat-ic"><svg><use href="#i-battery"/></svg></span>
+            <div><b>Ослабленный контроль коры</b><span>Префронтальные «тормоза» не успевают погасить ложную тревогу.</span></div>
+          </li>
+          <li class="feat anim" style="--i:6">
+            <span class="feat-ic"><svg><use href="#i-heart"/></svg></span>
+            <div><b>Гиперактивная островковая доля</b><span>Тело постоянно «слушает» себя: ком в горле, сердцебиение, духота.</span></div>
+          </li>
+          <li class="feat anim" style="--i:7">
+            <span class="feat-ic"><svg><use href="#i-power"/></svg></span>
+            <div><b>Дефицит торможения</b><span>Система GABA не гасит тревожные петли между нейронами.</span></div>
+          </li>
+          <li class="feat anim" style="--i:8">
+            <span class="feat-ic"><svg><use href="#i-pulse"/></svg></span>
+            <div><b>Норадреналиновая перегрузка</b><span>«Синее пятно» выдаёт залпы: дрожь, пот, учащённый пульс.</span></div>
+          </li>
+        </ul>
+        <div class="stats anim" style="--i:9">
+          <div class="stat"><b>≈301 млн</b><span>людей — антилидер ВОЗ</span></div>
+          <div class="stat"><b>4%</b><span>населения Земли</span></div>
+          <div class="stat"><b>×2</b><span>чаще встречается у женщин</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 07 · СДВГ -->
+    <section class="slide">
+      <div class="ghost anim" style="--i:9" aria-hidden="true">07</div>
+      <figure class="visual anim" style="--i:0">
+        <div class="plx">
+          <div class="frame">
+            <img src="assets/brain-07-adhd.webp" alt="Снимки мозга: норма и СДВГ" draggable="false">
+            <span class="chip"><i></i>фМРТ · сравнение с нормой</span>
+          </div>
+        </div>
+        <figcaption class="credit">Изображение: Neurolaunch</figcaption>
+      </figure>
+      <div class="content">
+        <div class="kicker anim" style="--i:1"><span class="kicker-line"></span>07 · Нейроразвитие</div>
+        <h1 class="anim" style="--i:2"><em>СДВГ</em></h1>
+        <p class="lead anim" style="--i:3">Мозг другого темпа: фокус и тормоза запаздывают, а импульсивность и идеи — нет.</p>
+        <ul class="feats">
+          <li class="feat anim" style="--i:4">
+            <span class="feat-ic"><svg><use href="#i-droplet-off"/></svg></span>
+            <div><b>Дофаминовый дефицит в коре</b><span>Мотивация и «награда» глохнут — скучное становится невозможным.</span></div>
+          </li>
+          <li class="feat anim" style="--i:5">
+            <span class="feat-ic"><svg><use href="#i-clock"/></svg></span>
+            <div><b>Позднее созревание коры</b><span>Префронтальная кора дозревает на 2–3 года позже — вместе с самоконтролем.</span></div>
+          </li>
+          <li class="feat anim" style="--i:6">
+            <span class="feat-ic"><svg><use href="#i-loop"/></svg></span>
+            <div><b>Непослушная сеть DMN</b><span>Дефолт-система не выключается при задачах — мысли уплывают.</span></div>
+          </li>
+          <li class="feat anim" style="--i:7">
+            <span class="feat-ic"><svg><use href="#i-network"/></svg></span>
+            <div><b>Ослабленная связность</b><span>Сети «фокус» и «тормоз» работают вразнобой, теряя синхронность.</span></div>
+          </li>
+          <li class="feat anim" style="--i:8">
+            <span class="feat-ic"><svg><use href="#i-moon"/></svg></span>
+            <div><b>Сбитый ритм сна</b><span>Мелатонин выделяется поздно: вечера бодрые, утра разбитые.</span></div>
+          </li>
+        </ul>
+        <div class="stats anim" style="--i:9">
+          <div class="stat"><b>5–7%</b><span>детей в мире</span></div>
+          <div class="stat"><b>≈2,5%</b><span>взрослых</span></div>
+          <div class="stat"><b>70–80%</b><span>причин — генетика</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 08 · ОКР -->
+    <section class="slide">
+      <div class="ghost anim" style="--i:9" aria-hidden="true">08</div>
+      <figure class="visual anim" style="--i:0">
+        <div class="plx">
+          <div class="frame">
+            <img src="assets/brain-08-ocd.jpg" alt="Снимки мозга: норма и ОКР" draggable="false">
+            <span class="chip"><i></i>ПЭТ · сравнение с нормой</span>
+          </div>
+        </div>
+        <figcaption class="credit">Изображение: Liv Hospital</figcaption>
+      </figure>
+      <div class="content">
+        <div class="kicker anim" style="--i:1"><span class="kicker-line"></span>08 · Обсессивно-компульсивное расстройство</div>
+        <h1 class="anim" style="--i:2"><em>ОКР</em></h1>
+        <p class="lead anim" style="--i:3">Петля сомнения: мозг не получает сигнал «проверено — можно успокоиться».</p>
+        <ul class="feats">
+          <li class="feat anim" style="--i:4">
+            <span class="feat-ic"><svg><use href="#i-loop"/></svg></span>
+            <div><b>Замкнутая петля</b><span>Орбитофронтальная кора → хвостатое ядро: команда «что-то не так» крутится по кругу.</span></div>
+          </li>
+          <li class="feat anim" style="--i:5">
+            <span class="feat-ic"><svg><use href="#i-alert"/></svg></span>
+            <div><b>Вечно «горящий» датчик ошибки</b><span>Передняя поясная кора сигнализирует об ошибке, даже когда её нет.</span></div>
+          </li>
+          <li class="feat anim" style="--i:6">
+            <span class="feat-ic"><svg><use href="#i-check-x"/></svg></span>
+            <div><b>Сбой чувства завершённости</b><span>Действие не «подписывается» как выполненное — хочется проверить снова.</span></div>
+          </li>
+          <li class="feat anim" style="--i:7">
+            <span class="feat-ic"><svg><use href="#i-droplet"/></svg></span>
+            <div><b>Серотониновый дисбаланс</b><span>Гипотеза терапии: СИОЗС выравнивают серотониновую передачу.</span></div>
+          </li>
+          <li class="feat anim" style="--i:8">
+            <span class="feat-ic"><svg><use href="#i-restart"/></svg></span>
+            <div><b>Компульсии-привычки</b><span>Ритуалы записываются в базальных ганглиях как сверхценные привычки.</span></div>
+          </li>
+        </ul>
+        <div class="stats anim" style="--i:9">
+          <div class="stat"><b>1–3%</b><span>людей в течение жизни</span></div>
+          <div class="stat"><b>≈50%</b><span>симптомов начинается до 20 лет</span></div>
+          <div class="stat"><b>КПТ + СИОЗС</b><span>размыкают петлю</span></div>
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <!-- ===== Кнопки листания ===== -->
@@ -307,6 +507,10 @@
       <button class="dot" data-goto="1"><i></i><span>Депрессия</span></button>
       <button class="dot" data-goto="2"><i></i><span>Шизофрения</span></button>
       <button class="dot" data-goto="3"><i></i><span>БАР</span></button>
+      <button class="dot" data-goto="4"><i></i><span>Альцгеймер</span></button>
+      <button class="dot" data-goto="5"><i></i><span>Тревожность</span></button>
+      <button class="dot" data-goto="6"><i></i><span>СДВГ</span></button>
+      <button class="dot" data-goto="7"><i></i><span>ОКР</span></button>
     </nav>
     <div class="bottombar-right">
       <span class="hint">← → или свайп</span>

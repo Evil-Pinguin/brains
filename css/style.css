@@ -22,6 +22,10 @@ body[data-slide="0"] { --accent: #3fd97e; --accent-ink: #04301a; }
 body[data-slide="1"] { --accent: #5da2f9; --accent-ink: #07203f; }
 body[data-slide="2"] { --accent: #b07df2; --accent-ink: #1d0b34; }
 body[data-slide="3"] { --accent: #ff9a4d; --accent-ink: #331606; }
+body[data-slide="4"] { --accent: #ff6b6b; --accent-ink: #3a0d0d; }
+body[data-slide="5"] { --accent: #f2c14e; --accent-ink: #33260a; }
+body[data-slide="6"] { --accent: #38c6e8; --accent-ink: #062630; }
+body[data-slide="7"] { --accent: #f06fae; --accent-ink: #360a20; }
 
 html, body { height: 100%; }
 
@@ -577,6 +581,19 @@ body.at-first .nav-next {
   font-size: 9.5px;
   letter-spacing: .04em;
   color: rgba(235, 238, 255, .26);
+}
+
+/* компактность нижней панели, когда точек много */
+@media (max-width: 1240px) {
+  .disclaimer { display: none; }
+}
+
+@media (max-width: 1080px) {
+  .bottombar-right { gap: 5px; }
+  .bar { width: 120px; }
+  .hint { display: none; }
+  .dots { gap: 14px; }
+  .dot { letter-spacing: .08em; }
 }
 
 /* ============================================================

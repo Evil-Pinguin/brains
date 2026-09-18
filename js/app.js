@@ -10,6 +10,7 @@
   const body = document.body;
   const stage = document.getElementById('stage');
   const counterCur = document.getElementById('counterCur');
+  const counterTotal = document.getElementById('counterTotal');
   const barFill = document.getElementById('barFill');
   const dots = Array.from(document.querySelectorAll('.dot'));
   const navPrev = document.getElementById('navPrev');
@@ -131,5 +132,6 @@
   }
 
   /* ---- стартовое состояние ---- */
+  if (counterTotal) counterTotal.textContent = String(total).padStart(2, '0');
   slides.forEach((s, i) => s.setAttribute('aria-hidden', i === 0 ? 'false' : 'true'));
 })();
